@@ -1,0 +1,11 @@
+.brand {
+    background-color: lightblue;
+    /* display: block; */
+    font-size: 2em;
+}
+
+.navbar {
+    background-color: lightpink;
+    display: block;
+
+}
