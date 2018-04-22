@@ -1,11 +1,20 @@
 .brand {
+    float: left;
     background-color: lightblue;
     /* display: block; */
     font-size: 2em;
+    padding-right: 10%;
 }
 
 .navbar {
+    
+    list-style-type: none; 
     background-color: lightpink;
     display: block;
 
+}
+
+ul {
+    list-style-type: none; 
+    display: block;
 }
