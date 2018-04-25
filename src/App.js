@@ -32,7 +32,7 @@ class App extends Component {
   scoreKeeper = () => {
     const newScore = this.state.goal + 1;
     this.setState({goal: newScore});
-    if (this.state.score === 12) {
+    if (this.state.goal === 12) {
       this.setState({feedback: "You've moved on to the playoffs"});
     } else {
       this.setState({feedback: "No memory issues yet. "});
