@@ -19,7 +19,7 @@ const FriendCard = props => (
         </li>
       </ul>
     </div>
-    <span onClick={() => props.removeFriend(props.id)} className="remove">
+    <span onClick={() => props.hitPlayer(props.id)}>
       𝘅
     </span>
   </div>
