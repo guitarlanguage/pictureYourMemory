@@ -22,10 +22,10 @@ class App extends Component {
       this.shuffleCards();
     } else if (this.state.goal === 12) {
         this.scoreKeeper();
-        this.resetHandler();
+        this.lineChange();
     } else {
       this.setState({feedback: "You hit the same player twice.  Hope you've got iron fists."});
-      this.resetHandler();
+      this.lineChange();
     }
   };
 
