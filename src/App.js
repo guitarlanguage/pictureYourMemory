@@ -44,7 +44,7 @@ class App extends Component {
 
   lineChange = () => {
     let arr = this.state.hockeyPlayers;
-    for (let i = arr.length - 1; i > 0; i--) {
+    for (let i = arr.length - 1; i > 0; i -= 1) {
       let j = Math.floor(Math.random() * (i + 1));
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
@@ -63,7 +63,12 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Picture Your Memory</Title>
+        <Title>Picture Your Memory
+        <h4>{this.state.feedback}</h4>
+        <h5>Goals: {this.state.goal}</h5>
+        <h5>High Score: {this.state.highScore}</h5>
+        </Title>
+
         {this.state.hockeyPlayers.map(friend => (
           <FriendCard
             hitPlayer={this.hitPlayer}
