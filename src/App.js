@@ -19,13 +19,13 @@ class App extends Component {
     if(this.state.hit.indexOf(id) === -1) {
       this.state.hit.push(id);
       this.scoreKeeper();
-      this.shuffleCards();
+      this.lineChange();
     } else if (this.state.goal === 12) {
         this.scoreKeeper();
-        this.lineChange();
+        this.resetLineUp();
     } else {
       this.setState({feedback: "You hit the same player twice.  Hope you've got iron fists."});
-      this.lineChange();
+      this.resetLineUp();
     }
   };
 
