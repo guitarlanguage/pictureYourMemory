@@ -44,10 +44,10 @@ class App extends Component {
 
   lineChange = () => {
     let arr = this.state.hockeyPlayers;
-    arr.forEach(function(elem, item) {
-      let j = Math.floor(Math.random() * (item + 1));
-      [arr[item], arr[j] = arr[j], arr[item]];
-    });
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
     return arr;
   };
 

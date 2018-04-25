@@ -5,7 +5,7 @@
     "image": "https://assets1.sportsnet.ca/wp-content/uploads/2013/12/SPNMSIP07_JOSEPH01.jpg",
     "occupation": "Goalie",
     "location": "Toronto Maple Leafs",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "image": "https://pbs.twimg.com/profile_images/1858201380/image_400x400.jpg",
     "occupation": "Center",
     "location": "Buffalo Sabres",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "image": "http://www.tradingcarddb.com/Images/Cards/Hockey/5216/5216-94Fr.jpg",
     "occupation": "Defense",
     "location": "New York Islanders",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "image": "http://puckjunk.com/wp-content/uploads/2014/11/sal_front.jpg",
     "occupation": "Bender",
     "location": "The Busch League",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "image": "http://puckjunk.com/wp-content/uploads/2014/11/topps_front.jpg",
     "occupation": "Defense",
     "location": "Pittsburg Penguins",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "image": "https://i.pinimg.com/originals/6b/57/00/6b57007c1b2c0d9a12bca0d14d89faba.jpg",
     "occupation": "Center",
     "location": "Canadian Junior Hockey Team",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "image": "https://timedotcom.files.wordpress.com/2013/12/131211-life-hockey-goalie-sawchuk-1966.jpg?quality=85&w=727",
     "occupation": "Goaltender before helmets or facemasks",
     "location": "Detroit Redwings",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "image": "http://www.goaliesarchive.com/leafs/goalie/hainsworth.jpg",
     "occupation": "Goaltender",
     "location": "Toronto Maple Leafs",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "image": "https://www.hhof.com/graphspot/one_gillies04.jpg",
     "occupation": "Left Winger",
     "location": "New York Islanders",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "image": "https://img.comc.com/i/Hockey/1993-94/Score---Base---Canadian/206/Brent-Gilchrist.jpg?id=1b546f42-048b-49e0-9203-ee515baa1de4&size=original",
     "occupation": "Center",
     "location": "Dallas Stars",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "image": "https://www.hhof.com/LegendsOfHockey/gallery/000073/000545659.jpg",
     "occupation": "Defense",
     "location": "Dallas Stars",
-    "clicked": false
+    "hit": false
   },
   {
     "id": 12,
@@ -93,6 +93,6 @@
     "image": "https://images-na.ssl-images-amazon.com/images/I/515m0U8DBAL._SY445_.jpg",
     "occupation": "Right Wing",
     "location": "Dallas Stars",
-    "clicked": false
+    "hit": false
   }
 ]
