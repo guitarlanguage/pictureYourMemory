@@ -10,8 +10,8 @@ const FriendCard = props => (
         value={props.id}
         onClick={() => props.hitPlayer(props.id)}
       />
-      {/* <h5>Name: {props.name}</h5> */}
     </div>
+
     <div className="content">
       <ul>
         <li>
