@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import PlayerCard from "./components/PlayerCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import hockeyPlayers from "./hockeyPlayers.json";
@@ -16,29 +16,31 @@ class App extends Component {
   };
 
   hitPlayer = id => {
-    if(this.state.hit.indexOf(id) === -1) {
+    if (this.state.hit.indexOf(id) === -1) {
       this.state.hit.push(id);
       this.scoreKeeper();
       this.lineChange();
     } else if (this.state.goal === 12) {
-        this.scoreKeeper();
-        this.resetLineUp();
+      this.scoreKeeper();
+      this.resetLineUp();
     } else {
-      this.setState({feedback: "You hit the same player twice.  Hope you've got iron fists."});
+      this.setState({
+        feedback: "You hit the same player twice.  Hope you've got iron fists."
+      });
       this.resetLineUp();
     }
   };
 
   scoreKeeper = () => {
     const newScore = this.state.goal + 1;
-    this.setState({goal: newScore});
+    this.setState({ goal: newScore });
     if (this.state.goal === 12) {
-      this.setState({feedback: "You've moved on to the playoffs"});
+      this.setState({ feedback: "You've moved on to the playoffs" });
     } else {
-      this.setState({feedback: "No memory issues yet. "});
-    } 
+      this.setState({ feedback: "No memory issues yet. " });
+    }
     if (newScore >= this.state.highScore) {
-      this.setState({highScore: newScore});
+      this.setState({ highScore: newScore });
     }
   };
 
@@ -53,31 +55,32 @@ class App extends Component {
 
   resetLineUp = () => {
     this.setState({
-    goal: 0,
-    highScore: this.state.highScore,
-    hit: []
+      goal: 0,
+      highScore: this.state.highScore,
+      hit: []
     });
     this.lineChange();
-  }
-  // Map over this.state.hockeyPlayers and render a FriendCard component for each friend object
+  };
+
   render() {
     return (
       <Wrapper>
-        <Title>Picture Your Memory
-        <h4>{this.state.feedback}</h4>
-        <h5>Goals: {this.state.goal}</h5>
-        <h5>High Score: {this.state.highScore}</h5>
+        <Title>
+          Picture Your Memory
+          <h4>{this.state.feedback}</h4>
+          <h5>Goals: {this.state.goal}</h5>
+          <h5>High Score: {this.state.highScore}</h5>
         </Title>
-
-        {this.state.hockeyPlayers.map(friend => (
-          <FriendCard
+        {/* Map over this.state.hockeyPlayers and render a PlayerCard component for each Player object*/}
+        {this.state.hockeyPlayers.map(player => (
+          <PlayerCard
             hitPlayer={this.hitPlayer}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+            id={player.id}
+            key={player.id}
+            name={player.name}
+            image={player.image}
+            occupation={player.occupation}
+            location={player.location}
           />
         ))}
       </Wrapper>
